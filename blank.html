@@ -11,13 +11,13 @@
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-header-logo">
-      <img src="https://via.placeholder.com/160x65" alt="Логотип дизайн-студии Nerds">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
     </a>
     <ul class="site-navigation">
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
+      <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
+      <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
+      <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+      <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
     </ul>
     <a class="basket-link" href="blank.html">Корзина</a>
   </nav>
@@ -27,9 +27,10 @@
 
 </main>
 
-<footer>
+<footer class="page-footer main-footer">
   <section class="footer-contacts">
     <h2 hidden>Контактная информация</h2>
+    <img src="img/map-1.jpg" width="1440" height="416" alt="Местоположение студии">
     <div class="contact-info">
       <p class="contact-title">NЁRDS DESIGN STUDIO</p>
       <p class="contact-address">191186, Санкт-Петербург,
@@ -38,18 +39,27 @@
       <p class="contact-tell">тел. +7 (812) 275-75-75</p>
       <a class="button feedback" href="#">Напишите нам</a>
     </div>
+    <div class="map-marker">
+      <img src="img/map-marker-1.png" width="231" height="190" alt="Указатель на карте">
+    </div>
   </section>
-  <section>
+  <section class="footer-social">
     <h2 class="social-title">Давайте дружить, это выгодно!</h2>
     <ul>
       <li>
-        <a class="social-button" href="#">Вконтакте</a>
+        <a class="social-button" href="https://vk.com">
+          <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+        </a>
       </li>
       <li>
-        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">
+          <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+        </a>
       </li>
       <li>
-        <a class="social-button" href="#">Инстаграм</a>
+        <a class="social-button" href="#">
+          <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+        </a>
       </li>
     </ul>
     <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>

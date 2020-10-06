@@ -9,15 +9,19 @@
 </head>
 <body class="page-body">
 <header class="main-header">
-  <nav class="main-navigation">
+  <nav class="main-navigation container">
     <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
     </a>
     <ul class="site-navigation">
-      <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
-      <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-      <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-      <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
+      <li class="site-navigation-item">
+        <a class="site-navigation-link" href="blank.html">Студия</a></li>
+      <li class="site-navigation-item">
+        <a class="site-navigation-link" href="blank.html">Клиенты</a></li>
+      <li class="site-navigation-item">
+        <a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+      <li class="site-navigation-item">
+        <a class="site-navigation-link" href="blank.html">Контакты</a></li>
     </ul>
     <a class="basket-link" href="blank.html">Корзина</a>
   </nav>
@@ -32,7 +36,7 @@
     <div class="filter-container">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
-          <legend>Стоимость:</legend>
+          <legend class="filter-legend">Стоимость:</legend>
           <div class="filter-range">
             <div class="scale">
               <input type="range" id="scale" name="prices-scale" min="1" max="15000" step="10">
@@ -89,8 +93,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button button-third" type="submit">Показать</button>
         </div>
+        <button class="button-show" type="submit">Показать</button>
       </form>
     </div>
 
@@ -99,13 +103,13 @@
         <h2 hidden>Сортировка товаров</h2>
         <p class="sort-title">Сортировать:</p>
         <ul class="sort-list">
-          <li><a class="sort-button" href="#">По цене</a></li>
-          <li><a class="sort-button" href="#">По типу </a></li>
-          <li><a class="sort-button" href="#">По названию</a></li>
+          <li class="sort-list-item"><a class="sort-button" href="#">По цене</a></li>
+          <li class="sort-list-item"><a class="sort-button" href="#">По типу </a></li>
+          <li class="sort-list-item"><a class="sort-button" href="#">По названию</a></li>
         </ul>
         <ul class="sort-list">
-          <li><a class="sort-down" href="#"></a></li>
-          <li><a class="sort-up" href="#"></a></li>
+          <li class="sort-list-item"><a class="sort-down" href="#"></a></li>
+          <li class="sort-list-item"><a class="sort-up" href="#"></a></li>
         </ul>
       </div>
       <div class="products">
@@ -133,10 +137,10 @@
       </div>
       <div class="pagination">
         <ul class="pagination-list">
-          <li><a class="page-button button-active">1</a></li>
-          <li><a class="page-button" href="#">2</a></li>
-          <li><a class="page-button" href="#">3</a></li>
-          <li><a class="page-button" href="#">Следующая</a></li>
+          <li><a class="page-button button-number-page button-page-active">1</a></li>
+          <li><a class="page-button button-number-page" href="#">2</a></li>
+          <li><a class="page-button button-number-page" href="#">3</a></li>
+          <li><a class="page-button button-next" href="#">Следующая</a></li>
         </ul>
       </div>
     </div>
@@ -164,26 +168,26 @@
     </div>
   </section>
   <section class="footer-social">
-    <div class="social-links">
+    <div>
       <ul class="social-list">
-        <li>
-          <a class="social-button" href="https://vk.com">
+        <li class="social-list-item">
+          <a class="social-button-vk" href="https://vk.com">
             <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
           </a>
         </li>
-        <li>
-          <a class="social-button" href="#">
+        <li class="social-list-item">
+          <a class="social-button-fs" href="#">
             <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
           </a>
         </li>
-        <li>
-          <a class="social-button" href="#">
+        <li class="social-list-item">
+          <a class="social-button-in" href="#">
             <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
           </a>
         </li>
       </ul>
     </div>
-    <div class="social-info">
+    <div class="footer-social-title">
       <h2 class="social-title">Давайте дружить, это выгодно!</h2>
       <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>

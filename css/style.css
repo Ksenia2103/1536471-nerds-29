@@ -66,11 +66,12 @@ img {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  padding-top: 49px;
+  align-items: center;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
+  min-height: 110px;
 }
 
 .site-navigation {
@@ -173,6 +174,7 @@ img {
   padding: 17px 40px 15px;
   border-radius: 3px;
   font-weight: 500;
+  display: inline-block;
 }
 
 .color-green {
@@ -340,7 +342,7 @@ img {
 /*footer*/
 .page-footer {
   display: grid;
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0 auto;
   padding: 0;
   grid-template-rows: 1fr min-content;
@@ -377,7 +379,7 @@ img {
   top: 86px;
 }
 
-.contact-item {
+.contact-info {
   position: absolute;
   z-index: 3;
   max-width: 319px;
@@ -387,10 +389,9 @@ img {
   left: 140px;
   top: 54px;
   bottom: 54px;
-}
-
-.contact-info {
   padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
 }
 
 .social-list {

@@ -23,28 +23,43 @@
       <li class="site-navigation-item">
         <a class="site-navigation-link" href="blank.html">Контакты</a></li>
     </ul>
-    <a class="basket-link" href="blank.html">Корзина</a>
+    <div class="user-navigation">
+      <a class="basket-link" href="blank.html">Корзина</a>
+    </div>
   </nav>
 </header>
 
-<main class="container">
+<main class="main-container">
   <h1 class="main-title">Магазин готовых шаблонов</h1>
 
-  <section class="main-catalog">
-    <h2 hidden>Фильтр товаров</h2>
+  <section class="main-catalog container">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
     <!-- форма фильтра -->
     <div class="filter-container">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
-          <legend class="filter-legend">Стоимость:</legend>
-          <div class="filter-range">
-            <div class="scale">
-              <input type="range" id="scale" name="prices-scale" min="1" max="15000" step="10">
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="
+                width: 30%;
+                margin-left: 20%
+              "></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="
+              left: 20%
+            "></div>
+              <div class="toggle toggle-max" tabindex="0" style="
+              left: 50%
+            "></div>
             </div>
-            <div class="price-number">
-              <label class="min-price">от <input class="number" type="number" name="min-price" value="0">
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
               </label>
-              <label class="max-price">до <input class="number" type="number" name="max-price" value="15000">
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
               </label>
             </div>
           </div>
@@ -53,43 +68,44 @@
         <div class="group-filters">
           <fieldset class="filter-grid">
             <legend class="filter-name">Сетка:</legend>
-            <ul>
-              <li class="radio">
-                <input type="radio" name="grid" value="adaptive" class="radio-button" id="grid-adaptive" checked>
-                <label for="grid-adaptive">Адаптивная</label>
+            <ul class="filter-list">
+              <li class="radio-item">
+                <input type="radio" name="grid" value="adaptive" class="visually-hidden radio-button" id="grid-adaptive"
+                       checked>
+                <label class="radio-label" for="grid-adaptive">Адаптивная</label>
               </li>
-              <li class="radio">
-                <input type="radio" name="grid" value="fixed" class="radio-button" id="grid-fixed">
-                <label for="grid-fixed">Фиксированная</label>
+              <li class="radio-item">
+                <input type="radio" name="grid" value="fixed" class="visually-hidden radio-button" id="grid-fixed">
+                <label class="radio-label" for="grid-fixed">Фиксированная</label>
               </li>
-              <li class="radio">
-                <input type="radio" name="grid" value="rubber" class="radio-button" id="grid-rubber">
-                <label for="grid-rubber">Резиновая</label>
+              <li class="radio-item">
+                <input type="radio" name="grid" value="rubber" class="visually-hidden radio-button" id="grid-rubber">
+                <label class="radio-label" for="grid-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-features">
             <legend class="filter-name">Особенности:</legend>
-            <ul>
+            <ul class="filter-list">
               <li class="checkbox-item">
-                <input id="slider" type="checkbox" class="checkbox" value="slider">
+                <input id="slider" type="checkbox" class="visually-hidden checkbox" value="slider" checked>
                 <label for="slider" class="label-checkbox">Слайдер</label>
               </li>
               <li class="checkbox-item">
-                <input id="block" type="checkbox" class="checkbox" value="block">
+                <input id="block" type="checkbox" class="visually-hidden checkbox" value="block">
                 <label for="block" class="label-checkbox">Блок преимуществ</label>
               </li>
               <li class="checkbox-item">
-                <input id="news" type="checkbox" class="checkbox" value="news">
+                <input id="news" type="checkbox" class="visually-hidden checkbox" value="news" checked>
                 <label for="news" class="label-checkbox">Новости</label>
               </li>
               <li class="checkbox-item">
-                <input id="gallery" type="checkbox" class="checkbox" value="gallery">
+                <input id="gallery" type="checkbox" class="visually-hidden checkbox" value="gallery">
                 <label for="gallery" class="label-checkbox">Галерея</label>
               </li>
               <li class="checkbox-item">
-                <input id="backet" type="checkbox" class="checkbox" value="backet">
-                <label for="backet" class="label-checkbox">Корзина</label>
+                <input id="basket" type="checkbox" class="visually-hidden checkbox" value="backet">
+                <label for="basket" class="label-checkbox">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -100,19 +116,17 @@
 
     <div class="catalog">
       <div class="sort-nav">
-        <h2 hidden>Сортировка товаров</h2>
+        <h2 class="visually-hidden">Сортировка товаров</h2>
         <p class="sort-title">Сортировать:</p>
         <ul class="sort-list">
-          <li class="sort-list-item"><a class="sort-button" href="#">По цене</a></li>
+          <li class="sort-list-item active"><a class="sort-button" href="#">По цене</a></li>
           <li class="sort-list-item"><a class="sort-button" href="#">По типу </a></li>
           <li class="sort-list-item"><a class="sort-button" href="#">По названию</a></li>
         </ul>
-        <ul class="filter-list">
-          <li class="filter-list-item"><a class="filter-down" href="#"></a></li>
-          <li class="filter-list-item"><a class="filter-up" href="#"></a></li>
-        </ul>
+        <button class="button-sort button-down" type="button" aria-label="сортировка вверх"></button>
+        <button class="button-sort button-up" type="button" aria-label="сортировка вниз"></button>
       </div>
-      <h2 hidden>Список товаров</h2>
+      <h2 class="visually-hidden">Список товаров</h2>
       <ul class="product-list">
         <li class="product-item">
           <img src="img/img-sedona-1.jpg" width="358" height="577" alt="img-sedona">
@@ -145,7 +159,7 @@
 
 <footer class="page-footer">
   <section class="footer-contacts">
-    <h2 hidden>Контактная информация</h2>
+    <h2 class="visually-hidden">Контактная информация</h2>
     <div class="map">
       <img src="img/map-1.jpg" width="1440" height="416" alt="Местоположение студии">
     </div>

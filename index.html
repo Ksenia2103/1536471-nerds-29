@@ -29,16 +29,41 @@
   </nav>
 </header>
 
-<main class="container">
+<main class="main-content">
   <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
   <section class="features">
     <h2 class="visually-hidden">Преимущества</h2>
-    <p class="features-title">Долго, дорого, скрупулезно</p>
-    <p class="features-text">Математически выверенный дизайн
-      для вашего сайта или мобильного приложения.</p>
-    <a class="more-info" href="#">Узнать больше</a>
+    <div class="slider container">
+
+      <ul class="slider-list">
+        <li class="slider-item slide1 active-slide">
+          <p class="features-title">Долго, дорого, скурпулезно</p>
+          <p class="features-text">Математически выверенный дизайн
+            для вашего сайта или мобильного приложения.</p>
+          <a class="more-info" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-item slide2">
+          <p class="features-title">Любим математику как никто другой</p>
+          <p class="features-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+          <a class="more-info" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-item slide3">
+          <p class="features-title">Только ночь,<br>только хардкор</p>
+          <p class="features-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+            начинается.</p>
+          <a class="more-info" href="#">Узнать больше</a>
+        </li>
+      </ul>
+      <div class="slider-radio">
+        <button class="active-slider-radio" type="button" aria-label="Слайд 1"></button>
+        <button type="button" aria-label="Слайд 2"></button>
+        <button type="button" aria-label="Слайд 3"></button>
+      </div>
+
+    </div>
   </section>
-  <section class="basic-offer">
+
+  <section class="basic-offer container">
     <h2 class="visually-hidden">Основные предложения</h2>
     <ul class="basic-offer-list">
       <li class="offer-item">
@@ -51,17 +76,17 @@
         <img src="img/illustration-2-1.jpg" width="300" height="146" alt="Приложения">
         <h3 class="offer-title">Приложения</h3>
         <p class="offer-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a class="button button-primary" href="catalog.html">Заказать</a>
+        <a class="button color-green button-primary" href="catalog.html">Заказать</a>
       </li>
       <li class="offer-item">
         <img src="img/illustration-3-1.jpg" width="300" height="146" alt="Презентации">
         <h3 class="offer-title">Презентации</h3>
         <p class="offer-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a class="button button-secondary" href="catalog.html">Заказать</a>
+        <a class="button color-yellow button-secondary" href="catalog.html">Заказать</a>
       </li>
     </ul>
   </section>
-  <section class="about-company">
+  <section class="about-company container">
     <div class="company-info">
       <h2 class="visually-hidden">О компании</h2>
       <p class="company-title">Мы — маленькая, но гордая
@@ -133,17 +158,17 @@
   <section class="footer-social container">
     <ul class="social-list">
       <li class="social-list-item">
-        <a class="social-button-vk" href="https://vk.com">
+        <a class="social-button" href="https://vk.com">
           <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
         </a>
       </li>
       <li class="social-list-item">
-        <a class="social-button-fs" href="#">
+        <a class="social-button" href="#">
           <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
         </a>
       </li>
       <li class="social-list-item">
-        <a class="social-button-in" href="#">
+        <a class="social-button" href="#">
           <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
         </a>
       </li>

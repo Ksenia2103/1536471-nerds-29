@@ -10,7 +10,7 @@
 <body class="page-body">
 <header class="main-header">
   <nav class="main-navigation container">
-    <a class="main-header-logo">
+    <a class="main-header-logo" href="index.html">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
     </a>
     <ul class="site-navigation">
@@ -19,7 +19,7 @@
       <li class="site-navigation-item">
         <a class="site-navigation-link" href="blank.html">Клиенты</a></li>
       <li class="site-navigation-item">
-        <a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+        <a class="site-navigation-link link-active" href="catalog.html">Магазин</a></li>
       <li class="site-navigation-item">
         <a class="site-navigation-link" href="blank.html">Контакты</a></li>
     </ul>
@@ -44,15 +44,12 @@
               <div class="scale">
                 <div class="bar" style="
                 width: 30%;
-                margin-left: 20%
-              "></div>
+                margin-left: 20%"></div>
               </div>
               <div class="toggle toggle-min" tabindex="0" style="
-              left: 20%
-            "></div>
+              left: 20%"></div>
               <div class="toggle toggle-max" tabindex="0" style="
-              left: 50%
-            "></div>
+              left: 50%"></div>
             </div>
             <div class="price-controls">
               <label class="min-price">
@@ -64,7 +61,6 @@
             </div>
           </div>
         </fieldset>
-
         <div class="group-filters">
           <fieldset class="filter-grid">
             <legend class="filter-name">Сетка:</legend>
@@ -113,7 +109,6 @@
         <button class="button-show" type="submit">Показать</button>
       </form>
     </div>
-
     <div class="catalog">
       <div class="sort-nav">
         <h2 class="visually-hidden">Сортировка товаров</h2>
@@ -130,21 +125,51 @@
       <ul class="product-list">
         <li class="product-item">
           <img src="img/img-sedona-1.jpg" width="358" height="577" alt="img-sedona">
+          <div class="product-text">
+            <a href="#"><h3 class="product-title">Sedona</h3></a>
+            <p class="product-info">Информационный сайт для туристов</p>
+            <a href="#" class="product-button button">9 900 ₽</a>
+          </div>
         </li>
         <li class="product-item">
           <img src="img/img-pink-1.jpg" width="358" height="578" alt="img-pink">
+          <div class="product-text">
+            <a href="#"><h3 class="product-title">Pink App</h3></a>
+            <p class="product-info">Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#" class="product-button button">9 900 ₽</a>
+          </div>
         </li>
         <li class="product-item">
           <img src="img/img-barbershop-1.jpg" width="358" height="578" alt="img-barbershop">
+          <div class="product-text">
+            <a href="#"><h3 class="product-title">Barbershop</h3></a>
+            <p class="product-info">Сайт салона красоты. Для мужчин, да.</p>
+            <a href="#" class="product-button button">9 900 ₽</a>
+          </div>
         </li>
         <li class="product-item">
           <img src="img/img-mishka-1.jpg" width="358" height="578" alt="img-mishka">
+          <div class="product-text">
+            <a href="#"><h3 class="product-title">Mishka</h3></a>
+            <p class="product-info">Интернет-магазин вязаных игрушек</p>
+            <a href="#" class="product-button button">9 900 ₽</a>
+          </div>
         </li>
         <li class="product-item">
           <img src="img/img-aplus-1.jpg" width="358" height="578" alt="img-aplus">
+          <div class="product-text">
+            <a href="#"><h3 class="product-title">A Plus</h3></a>
+            <p class="product-info">Лендинг курсов повышения квалификации</p>
+            <a href="#" class="product-button button">9 900 ₽</a>
+          </div>
         </li>
         <li class="product-item">
           <img src="img/img-kvast-1.jpg" width="358" height="578" alt="img-kvast">
+          <div class="product-text">
+            <a href="#"><h3 class="product-title">Кваст</h3></a>
+            <p class="product-info">Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="product-button button">9 900 ₽</a>
+          </div>
         </li>
       </ul>
       <ul class="pagination-list">
@@ -156,7 +181,6 @@
     </div>
   </section>
 </main>
-
 <footer class="page-footer">
   <section class="footer-contacts">
     <h2 class="visually-hidden">Контактная информация</h2>
@@ -178,18 +202,18 @@
   <section class="footer-social container">
     <ul class="social-list">
       <li class="social-list-item">
-        <a class="social-button-vk" href="https://vk.com">
-          <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+        <a class="social-button" href="https://vk.com">
+          <img class="social-img" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
         </a>
       </li>
       <li class="social-list-item">
-        <a class="social-button-fs" href="#">
-          <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+        <a class="social-button" href="#">
+          <img class="social-img" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
         </a>
       </li>
       <li class="social-list-item">
-        <a class="social-button-in" href="#">
-          <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+        <a class="social-button" href="#">
+          <img class="social-img" src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
         </a>
       </li>
     </ul>

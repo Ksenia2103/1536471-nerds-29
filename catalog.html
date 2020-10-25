@@ -28,10 +28,8 @@
     </div>
   </nav>
 </header>
-
 <main class="main-container">
   <h1 class="main-title">Магазин готовых шаблонов</h1>
-
   <section class="main-catalog container">
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <!-- форма фильтра -->
@@ -106,7 +104,7 @@
             </ul>
           </fieldset>
         </div>
-        <button class="button-show" type="submit">Показать</button>
+        <button class="button-show" type="submit"><span class="button-show-text">Показать</span></button>
       </form>
     </div>
     <div class="catalog">
@@ -118,8 +116,14 @@
           <li class="sort-list-item"><a class="sort-button" href="#">По типу </a></li>
           <li class="sort-list-item"><a class="sort-button" href="#">По названию</a></li>
         </ul>
-        <button class="button-sort button-down" type="button" aria-label="сортировка вверх"></button>
-        <button class="button-sort button-up" type="button" aria-label="сортировка вниз"></button>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#" class="nav-button nav-button-down nav-active" aria-label="сортировка вниз"></a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-button nav-button-up" aria-label="сортировка вверх"></a>
+          </li>
+        </ul>
       </div>
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="product-list">

@@ -73,5 +73,26 @@
     </div>
   </section>
 </footer>
+
+<section class="modal modal-feedback">
+  <h2>Напишите нам</h2>
+  <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+    <p class="form-item">
+      <label for="form-name">Ваше имя:<br></label>
+      <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p class="form-item">
+      <label for="form-email">Ваш email:<br></label>
+      <input id="form-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p class="form-item">
+      <label for="form-message">Текст письма:<br></label>
+      <textarea id="form-message" name="text" rows="4" placeholder="В свободной форме"></textarea>
+    </p>
+    <button class="send-message" type="submit" value="Отправить">Отправить</button>
+  </form>
+  <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+</section>
+
 </body>
 </html>

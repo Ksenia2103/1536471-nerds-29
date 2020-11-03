@@ -40,22 +40,14 @@
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
-                <div class="bar" style="
-                width: 30%;
-                margin-left: 20%"></div>
+                <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0" style="
-              left: 20%"></div>
-              <div class="toggle toggle-max" tabindex="0" style="
-              left: 50%"></div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
             </div>
             <div class="price-controls">
-              <label class="min-price">
-                от <input type="number" name="min-price" value="0">
-              </label>
-              <label class="max-price">
-                до <input type="number" name="max-price" value="15000">
-              </label>
+              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" value="15000"></label>
             </div>
           </div>
         </fieldset>
@@ -118,10 +110,18 @@
         </ul>
         <ul class="nav-list">
           <li class="nav-list-item">
-            <a href="#" class="nav-button nav-button-down nav-active" aria-label="сортировка вниз"></a>
+            <a href="#" class="nav-button nav-active">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#231F20"/>
+              </svg>
+            </a>
           </li>
           <li class="nav-list-item">
-            <a href="#" class="nav-button nav-button-up" aria-label="сортировка вверх"></a>
+            <a href="#" class="nav-button">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>

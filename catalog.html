@@ -191,7 +191,7 @@
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1413.2176679231047!2d30.32011444943114!3d59.938918820022295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604206155394!5m2!1sru!2sru"
-        width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0"></iframe>
       <img src="img/map-1.jpg" width="1440" height="416" alt="Местоположение студии">
     </div>
@@ -200,7 +200,7 @@
       <p class="contact-address">191186, Санкт-Петербург,
         ул. Б. Конюшенная, д. 19/8
       </p>
-      <p class="contact-tell">тел. +7 (812) 275-75-75</p>
+      <p class="contact-tell">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
       <a class="button feedback" href="writeus.html">Напишите нам</a>
     </div>
     <div class="map-marker">
@@ -233,23 +233,28 @@
 </footer>
 
 <section class="modal modal-feedback">
-  <h2>Напишите нам</h2>
-  <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-    <p class="form-item">
-      <label for="form-name">Ваше имя:<br></label>
-      <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="form-item">
-      <label for="form-email">Ваш email:<br></label>
-      <input id="form-email" type="email" name="email" placeholder="email@example.com">
-    </p>
-    <p class="form-item">
-      <label for="form-message">Текст письма:<br></label>
-      <textarea id="form-message" name="text" rows="4" placeholder="В свободной форме"></textarea>
-    </p>
-    <button class="send-message" type="submit" value="Отправить">Отправить</button>
-  </form>
-  <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+  <div class="modal-wrapper">
+    <h2 class="modal-header">Напишите нам</h2>
+    <button class="modal-close" type="button" name="Закрыть"></button>
+    <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+      <div class="form-contact-data">
+        <p class="contact-data-item">
+          <label class="modal-label" for="form-name">Ваше имя:<br></label>
+          <input class="modal-field" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-data-item">
+          <label class="modal-label" for="form-email">Ваш email:<br></label>
+          <input class="modal-field" id="form-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="contact-text">
+        <label class="modal-label" for="form-message">Текст письма:<br></label>
+        <textarea class="modal-field message-area" id="form-message" name="text" rows="4"
+                  placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit" class="send-message">Отправить</button>
+    </form>
+  </div>
 </section>
 <script src="js/feedback-modal.js"></script>
 </body>

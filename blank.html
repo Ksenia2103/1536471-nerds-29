@@ -75,23 +75,30 @@
 </footer>
 
 <section class="modal modal-feedback">
-  <h2>Напишите нам</h2>
-  <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-    <p class="form-item">
-      <label for="form-name">Ваше имя:<br></label>
-      <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="form-item">
-      <label for="form-email">Ваш email:<br></label>
-      <input id="form-email" type="email" name="email" placeholder="email@example.com">
-    </p>
-    <p class="form-item">
-      <label for="form-message">Текст письма:<br></label>
-      <textarea id="form-message" name="text" rows="4" placeholder="В свободной форме"></textarea>
-    </p>
-    <button class="send-message" type="submit" value="Отправить">Отправить</button>
-  </form>
-  <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+  <div class="modal-wrapper">
+    <div class="modal-header">
+      <h2 class="modal-header">Напишите нам</h2>
+      <button class="modal-close" type="button" name="Закрыть"></button>
+    </div>
+    <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+      <div class="form-contact-data">
+        <p class="contact-data-item">
+          <label class="modal-label" for="form-name">Ваше имя:<br></label>
+          <input class="modal-field" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-data-item contact-data-item-email">
+          <label class="modal-label" for="form-email">Ваш email:<br></label>
+          <input class="modal-field" id="form-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="contact-text">
+        <label class="modal-label" for="form-message">Текст письма:<br></label>
+        <textarea class="modal-field message-area" id="form-message" name="text" rows="6"
+                  placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit" class="send-message">Отправить</button>
+    </form>
+  </div>
 </section>
 <script src="js/feedback-modal.min.js"></script>
 </body>

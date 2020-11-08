@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
 <header class="main-header">
@@ -71,7 +71,7 @@
       <li class="offer-item">
         <img src="img/illustration-2-1.jpg" width="300" height="146" alt="Приложения">
         <h3 class="offer-title">Приложения</h3>
-        <p class="offer-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+        <p class="offer-text">Покорите топ-10 приложений<br> в AppStore и Google Play</p>
         <a class="button color-green button-primary" href="catalog.html">Заказать</a>
       </li>
       <li class="offer-item">
@@ -138,23 +138,23 @@
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1413.2176679231047!2d30.32011444943114!3d59.938918820022295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604206155394!5m2!1sru!2sru"
-        width="1440" height="416" style="border:0;position:absolute; width:100%; margin: 0 auto;" allowfullscreen="" aria-hidden="false"
+        height="416" style="border:0;position:absolute; width:100%; margin: 0 auto;" allowfullscreen=""
+        aria-hidden="false"
         tabindex="0"></iframe>
-      <img src="img/map-1.jpg" width="1440" height="416" alt="Местоположение студии">
     </div>
-    <div class="contact-info container">
-      <p class="contact-title">NЁRDS DESIGN STUDIO</p>
-      <p class="contact-address">191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8
-      </p>
-      <p class="contact-tell">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-      <a class="button feedback" href="writeus.html">Напишите нам</a>
-    </div>
-    <div class="map-marker">
-      <img src="img/map-marker-1.png" width="231" height="190" alt="Указатель на карте">
+    <div class="container">
+      <div class="contact-info">
+        <p class="contact-title">NЁRDS DESIGN STUDIO</p>
+        <p class="contact-address">191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="contact-tell">тел. <a class="tell" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        <a class="button feedback" href="writeus.html">Напишите нам</a>
+      </div>
     </div>
   </section>
   <section class="footer-social container">
+    <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="social-list">
       <li class="social-list-item">
         <a class="social-button" href="https://vk.com">
@@ -182,8 +182,8 @@
 <section class="modal modal-feedback">
   <div class="modal-wrapper">
     <div class="modal-header">
-    <h2 class="modal-header">Напишите нам</h2>
-    <button class="modal-close" type="button" name="Закрыть"></button>
+      <h2 class="modal-header">Напишите нам</h2>
+      <button class="modal-close" type="button" name="Закрыть"></button>
     </div>
     <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
       <div class="form-contact-data">
@@ -205,6 +205,6 @@
     </form>
   </div>
 </section>
-<script src="js/feedback-modal.js"></script>
+<script src="js/feedback-modal.min.js"></script>
 </body>
 </html>
